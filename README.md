@@ -69,3 +69,46 @@ Retrofit retrofit = new Retrofit.Builder().baseUrl(server.url("/"))
         .addCallAdapterFactory(SimpleBodyCallAdapterFactory.create())
         .build();
 ```
+
+
+## Support base type
+- String
+- Short
+- Integer
+- Long
+- Boolean
+- Float
+- Double
+- Void
+
+## Example
+```java
+    public interface MyServiceApi {
+
+        @GET("/void")
+        Void voidResponse();
+
+        @GET("/string")
+        String stringResponse();
+
+        @GET("/long")
+        Integer intResponse();
+
+        @GET("/boolean")
+        Boolean booleanResponse();
+
+        @GET("/short")
+        Short shortResponse();
+
+        @GET("/long")
+        Long longResponse();
+
+        @GET("/float")
+        Float floatResponse();
+
+        @GET("/double")
+        Double doubleResponse();
+
+
+    }
+```
