@@ -6,18 +6,22 @@
     <parent>
         <groupId>io.github.easyretrofit</groupId>
         <artifactId>parent</artifactId>
-        <version>1.1.0</version>
+        <version>3.0.0</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <description>Support convert java base type like String, Short, Integer, Long, Boolean, Float, Double. when use with adapter-simple-body</description>
+    <description>Support convert java base type like String, Short, Integer, Long, Boolean, Float, Double. when use with
+        adapter-simple-body
+    </description>
+    <name>converter-simple-body-base-type</name>
     <artifactId>converter-simple-body-base-type</artifactId>
-    <version>1.1.1</version>
+    <version>1.2.0</version>
 
     <packaging>jar</packaging>
 
     <properties>
         <junit.version>4.13.2</junit.version>
+        <retrofit.version>3.0.0</retrofit.version>
     </properties>
 
     <url>https://github.com/easyretrofit/${project.artifactId}</url>
@@ -32,6 +36,7 @@
         <dependency>
             <groupId>com.squareup.retrofit2</groupId>
             <artifactId>retrofit</artifactId>
+            <version>${retrofit.version}</version>
             <scope>provided</scope>
         </dependency>
 
@@ -44,8 +49,8 @@
 
         <dependency>
             <groupId>io.github.easyretrofit</groupId>
-            <artifactId>easy-retrofit-adapter-simple-body</artifactId>
-            <version>1.0.0</version>
+            <artifactId>adapter-simple-body</artifactId>
+            <version>1.2.0</version>
             <scope>test</scope>
         </dependency>
 
@@ -59,7 +64,7 @@
         <dependency>
             <groupId>com.squareup.okhttp3</groupId>
             <artifactId>mockwebserver</artifactId>
-            <version>3.14.9</version>
+            <version>4.12.0</version>
             <scope>test</scope>
         </dependency>
 
